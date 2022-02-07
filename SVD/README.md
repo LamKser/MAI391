@@ -109,3 +109,11 @@ ax[1, 1].axis("off")
 plt.show()
 
 ![rank_5_2_45](https://user-images.githubusercontent.com/83662223/152775866-c4558d37-ae64-4eed-9cc2-e010c1388248.png)
+
+![ảnh](https://user-images.githubusercontent.com/83662223/152776173-8b5535d5-eb54-4cdd-b93e-a927c313d4b6.png)
+
+tự code:
+![ảnh](https://user-images.githubusercontent.com/83662223/152776217-2fe9641a-c797-4ec7-a707-8da4864bf10f.png)
+
+dùng thư viện:
+![ảnh](https://user-images.githubusercontent.com/83662223/152776496-97fa8734-d45f-43ad-b4eb-950a7c9e70b2.png)
