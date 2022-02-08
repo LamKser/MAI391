@@ -57,11 +57,12 @@ class SVD:
         return u_ith @ v_ithT
 
     def matrix_approximation(self, rank):
-        error = 0
+        error_mau = sum(self.lamda)
+        error_tu = sum(self.lamda[rank:])
         total = np.zeros((self.m, self.n))
         for ith in range(rank):
             total += (self.lamda[ith] * self.rank_1(ith))
-        error = self.lamda[rank] if rank != np.linalg.matrix_rank(self.matrix) else 0
+        error = error_tu / error_mau
         return total, error
 
 
