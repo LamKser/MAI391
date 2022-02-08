@@ -5,13 +5,13 @@ class SVD:
 
     def __init__(self, matrix):
         self.matrix = matrix
-        self.m, self.n = matrix.shape
-        self.U = np.zeros((self.m, self.m))
+        self.row, self.col = matrix.shape
+        self.U = np.zeros((self.row, self.col))
         self.lamda = None
-        self.V = np.zeros((self.n, self.n))
+        self.V = np.zeros((self.col, self.col))
 
     def svd(self):
-        if self.m > self.n:  # A*A^T
+        if self.row > self.col:  # A*A^T
             AAT = self.matrix @ self.matrix.T
             e, v = np.linalg.eig(AAT)
             U_aat = dict()
@@ -59,7 +59,7 @@ class SVD:
     def matrix_approximation(self, rank):
         error_mau = sum(self.lamda)
         error_tu = sum(self.lamda[rank:])
-        total = np.zeros((self.m, self.n))
+        total = np.zeros((self.row, self.col))
         for ith in range(rank):
             total += (self.lamda[ith] * self.rank_1(ith))
         error = error_tu / error_mau
