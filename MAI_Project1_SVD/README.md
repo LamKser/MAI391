@@ -6,7 +6,12 @@
 ## Build SVD from scratch
 ### Landscape image
 <div align="center">
-    <img src="MAI_Project1_SVD/Data/flower.jpg">
+    <img src="..//MAI_Project1_SVD/Data/flower.jpg">
     <p>Figure 1: Example</p>
 </div>
+
 ### Portrait image
+<div align="center">
+    <img src="..//MAI_Project1_SVD/Data/dog.jpg">
+    <p>Figure 1: Example</p>
+</div>
